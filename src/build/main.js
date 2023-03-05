@@ -1,0 +1,102 @@
+const fs=require('fs');
+const path=require('path');
+const ejs=require('ejs');
+const Template=require('./template.js');
+const MarkdownIt=require('markdown-it')({
+    html: true,
+    linkify: true
+});
+
+const YAML=require('yamljs');
+var Config=YAML.load('./data/config.yaml');
+Config.student=YAML.load(`./data/${Config.configure.students}`).student;
+const getStudentData=require('./student.js').getStudentData;
+
+var deleteDir=(url)=>{
+    if(fs.existsSync(url)){
+        var files=[];
+        files=fs.readdirSync(url);
+        files.forEach((file,index)=>{
+            var curPath=path.join(url,file);
+            if(fs.statSync(curPath).isDirectory())
+                deleteDir(curPath);
+            else fs.unlinkSync(curPath);
+        });
+        fs.rmdirSync(url);
+    }
+}
+
+deleteDir("dist");
+fs.mkdirSync("dist");
+fs.mkdirSync("dist/student");
+fs.mkdirSync("dist/test");
+
+ejs.renderFile("./src/templates/home.html",{
+    README: MarkdownIt.render(fs.readFileSync(`./data/${Config.readme}`,{encoding:'utf8',flag:'r'}))
+},(err,HTML)=>{
+    fs.writeFileSync("./dist/index.html",
+        Template({title: `Home`,
+                  header: ``
+                 },HTML));
+});
+
+Config.configure.tests.forEach(test=>{
+    test.detail=YAML.load(`./data/${test.file}`);
+    test.detail.date.start=require('dayjs')(test.detail.date.start).format("M / D / YYYY");
+    test.detail.date.end=require('dayjs')(test.detail.date.end).format("M / D / YYYY");
+    test.description=MarkdownIt.render(test.detail.description);
+    test.fullscore=test.Sumscore=0;
+    test.detail.subject.forEach(subject=>{
+        subject.sum=subject.maxscore=0;
+        test.fullscore+=subject.fullscore;
+    });
+    test.detail.message.forEach(message=>{
+        message.stu=getStudentData(message.name);
+        message.sum=0, message.addclass=new Array();
+        message.score.forEach((score,scoreIndex)=>{
+            message.sum+=score;
+            test.detail.subject[scoreIndex].sum+=score;
+            test.detail.subject[scoreIndex].maxscore
+                =Math.max(test.detail.subject[scoreIndex].maxscore,score);
+        });
+        test.Sumscore+=message.sum;
+    });
+    test.detail.subject.forEach(subject=>{
+        subject.sum/=test.detail.message.length;
+        console.log(subject.name,subject.sum,subject.maxscore);
+    });
+    test.Sumscore/=test.detail.message.length;
+    test.detail.message.forEach(message=>{
+        message.score.forEach((score,scoreIndex)=>{
+            message.addclass.push(
+                score==test.detail.subject[scoreIndex].maxscore?
+                ` class="score-best"`:``
+            );
+        });
+    });
+    ejs.renderFile("./src/templates/test_detail.html",{
+        data: Config,
+        test
+    },(err,HTML)=>{
+        fs.writeFileSync(`./dist/test/${test.id}.html`,
+            Template({title: test.detail.title,
+                      header: ``
+                     },HTML));
+    });
+});
+
+// console.log(JSON.stringify(Config,null,"  "));
+
+ejs.renderFile("./src/templates/test_list.html",{
+    data: Config
+},(err,HTML)=>{
+    fs.writeFileSync("./dist/test/index.html",
+        Template({title: `Tests List`,
+                  header: ``
+                 },HTML));
+});
+
+if(process.argv.slice(2).includes("-github")){
+    const ghpages=require('gh-pages');
+    ghpages.publish('dist',function(err){});
+}

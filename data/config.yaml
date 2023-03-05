@@ -1,0 +1,10 @@
+on: score
+readme: readme.md
+title: Scoreboards
+configure:
+  students: student.yaml
+  tests:
+    - id: 2
+      file: tests/2.yaml
+    - id: 1
+      file: tests/1.yaml

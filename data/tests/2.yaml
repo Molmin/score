@@ -1,0 +1,116 @@
+title: 七年级（2022 学年）下学期第二大周大周考试
+date: 
+  start: 2023-02-25
+  end: 2023-02-01
+description: |
+  本次大周考无社会考试。由于其他原因，部分同学**科学成绩**可能有误，我们**支持申诉**。
+subject:
+  - name: 语文
+    fullscore: 120
+  - name: 数学
+    fullscore: 120
+  - name: 英语
+    fullscore: 100
+  - name: 科学
+    fullscore: 100
+message:
+  - name: =26
+    score: [91,115,98,95]
+  - name: =27
+    score: [94,110,99,85]
+  - name: =32
+    score: [90,119,88.5,90]
+  - name: =48
+    score: [87,119,92,88]
+  - name: =31
+    score: [77,113,98,95]
+  - name: =43
+    score: [84,108,95,95]
+  - name: =20
+    score: [92,109,91,89]
+  - name: =45
+    score: [87,109,97,88]
+  - name: =28
+    score: [79,110,92.5,98]
+  - name: =40
+    score: [88,100,95.5,95]
+  - name: =38
+    score: [81,115,93,89]
+  - name: =46
+    score: [82,111,94,88]
+  - name: =42
+    score: [82,112,92.5,88]
+  - name: =25
+    score: [79,111,92,92]
+  - name: =12
+    score: [82,109,88.5,91]
+  - name: =39
+    score: [75,119,86.5,90]
+  - name: =36
+    score: [83,95,94,93]
+  - name: =33
+    score: [74,107,86.5,96]
+  - name: =35
+    score: [85,94,91,93]
+  - name: =24
+    score: [86,94,90.5,91]
+  - name: =3
+    score: [76,105,92,86]
+  - name: =37
+    score: [73,107,89,90]
+  - name: =41
+    score: [86,86,93.5,93]
+  - name: =34
+    score: [85,95,91.5,86]
+  - name: =7
+    score: [85,85,94,91]
+  - name: =29
+    score: [75,104,84,92]
+  - name: =1
+    score: [66,108,90.5,88]
+  - name: =14
+    score: [81,99,83,89]
+  - name: =9
+    score: [79,106,83,82]
+  - name: =47
+    score: [76,91,87.5,95]
+  - name: =10
+    score: [76,89,88,95]
+  - name: =21
+    score: [80,88,89.5,90]
+  - name: =15
+    score: [89,80,87,91]
+  - name: =5
+    score: [74,92,93.5,85]
+  - name: =8
+    score: [80,87,91.5,86]
+  - name: =30
+    score: [80,87,89.5,88]
+  - name: =50
+    score: [67,108,85,82]
+  - name: =13
+    score: [80,77,89,93]
+  - name: =22
+    score: [87,75,89,86]
+  - name: =17
+    score: [84,72,87.5,85]
+  - name: =11
+    score: [81,66,91,87]
+  - name: =6
+    score: [76,76,81.5,90]
+  - name: =2
+    score: [77,70,87,87]
+  - name: =4
+    score: [73,71,86,90]
+  - name: =16
+    score: [83,61,87,89]
+  - name: =19
+    score: [82,65,78.5,89]
+  - name: =18
+    score: [87,57,80.5,84]
+  - name: =23
+    score: [78,55,87.5,86]
+  - name: =44
+    score: [63,101,61.5,79]
+  - name: =49
+    score: [41,60,45,79]

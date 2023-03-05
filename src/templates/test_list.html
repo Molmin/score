@@ -1,0 +1,33 @@
+<style>
+    td,th{
+        word-wrap: break-word;
+    }
+    td{
+        white-space: nowrap;
+        overflow: hidden;
+        height: 30px;
+    }
+    td:nth-child(2){
+        width: 55%;
+    }
+    table{
+        width: 100%;
+        background-color: white;
+    }
+</style>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Count</th>
+        <th>Date</th>
+    </tr>
+    <% data.configure.tests.forEach(test=>{ %>
+        <tr>
+            <td><%= test.id %></td>
+            <td><a href="/<%= data.on %>/test/<%= test.id %>.html"><%= test.detail.title %></a></td>
+            <td><i class="fa fa-solid fa-user"></i>&nbsp;<%= test.detail.message.length %></td>
+            <td><%= test.detail.date.start %> 至 <%= test.detail.date.end %></td>
+        </tr>
+    <% }) %>
+</table>
