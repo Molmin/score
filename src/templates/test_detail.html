@@ -50,13 +50,13 @@
     <tr>
         <td colspan="3" class="score-average">Average</td>
         <td>
-            <%= test.Sumscore %>
+            <%= parseInt(test.Sumscore*100)/100 %>
             <span class="score-split">/</span>
             <span class="score-standard"><%= parseInt(test.Sumscore/test.detail.message[0].sum*1000)/10 %></span>
         </td>
         <% test.detail.subject.forEach((subject,subjectIndex)=>{ %>
             <td>
-                <%= subject.sum %>
+                <%= parseInt(subject.sum*100)/100 %>
                 <span class="score-split">/</span>
                 <span class="score-standard"><%= parseInt(subject.sum/test.detail.subject[subjectIndex].maxscore*1000)/10 %></span>
             </td>
