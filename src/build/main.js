@@ -52,7 +52,7 @@ Config.configure.tests.forEach(test=>{
     test.description=MarkdownIt.render(test.detail.description);
     test.fullscore=test.Sumscore=0;
     test.detail.subject.forEach(subject=>{
-        subject.sum=subject.maxscore=0;
+        subject.sum=subject.maxscore=subject.jointotal=0;
         test.fullscore+=subject.fullscore;
     });
     test.detail.message.forEach(message=>{
@@ -64,11 +64,12 @@ Config.configure.tests.forEach(test=>{
             test.detail.subject[scoreIndex].sum+=score;
             test.detail.subject[scoreIndex].maxscore
                 =Math.max(test.detail.subject[scoreIndex].maxscore,score);
+            if(score!=null)test.detail.subject[scoreIndex].jointotal++;
         });
         test.Sumscore+=message.sum;
     });
     test.detail.subject.forEach(subject=>{
-        subject.sum/=test.detail.message.length;
+        subject.sum/=subject.jointotal;
         console.log(subject.name,subject.sum,subject.maxscore);
     });
     test.Sumscore/=test.detail.message.length;
