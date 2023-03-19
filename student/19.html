@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title id="title">Tests List - Scoreboards</title>
+        <title id="title">蒋函霖 - Scoreboards</title>
         <link rel="shortcut icon" type="image/x-icon" href="https://topan-dev.github.io/TopanUI/favicon.ico">
         <script src="https://topan-dev.github.io/TopanUI/src/jquery.js"></script>
         <link rel="stylesheet" href="https://topan-dev.github.io/TopanUI/topan.css">
@@ -23,13 +23,13 @@
             <div class="topan-header-left">
                 <span class="topan-header-text">Scoreboards&nbsp;</span>
                 <a href="/score/test">
-                    <span class="topan-button-ordinary topan-button-commonly topan-button-header-block-showed">
+                    <span class="topan-button-ordinary topan-button-commonly topan-button-header-block">
                         <i class="fa fa-solid fa-fire"></i>
                         <span>&nbsp;Tests</span>
                     </span>
                 </a>
                 <a href="/score/student">
-                    <span class="topan-button-ordinary topan-button-commonly topan-button-header-block">
+                    <span class="topan-button-ordinary topan-button-commonly topan-button-header-block-showed">
                         <i class="fa fa-solid fa-user"></i>
                         <span>&nbsp;Students</span>
                     </span>
@@ -43,52 +43,20 @@
                 <div class="topan-mainpage-auto">
                     <br>
                     <style>
-    td,th{
-        word-wrap: break-word;
+    .student-id{
+        color: grey;
+        font-size: 70%;
     }
-    td{
-        white-space: nowrap;
-        overflow: hidden;
-        height: 30px;
-    }
-    td:nth-child(2){
-        width: 55%;
-    }
-    table{
-        width: 100%;
-        background-color: white;
+    .messages-display{
+        color: #888;
     }
 </style>
-<table>
-    <tr>
-        <th>ID</th>
-        <th>Title</th>
-        <th>Count</th>
-        <th>Date</th>
-    </tr>
-    
-        <tr>
-            <td>3</td>
-            <td><a href="/score/test/3.html">七年级（2022 学年）下学期第三大周大周考试</a></td>
-            <td><i class="fa fa-solid fa-user"></i>&nbsp;50</td>
-            <td>3 / 11 / 2023 至 3 / 16 / 2023</td>
-        </tr>
-    
-        <tr>
-            <td>2</td>
-            <td><a href="/score/test/2.html">七年级（2022 学年）下学期第二大周大周考试</a></td>
-            <td><i class="fa fa-solid fa-user"></i>&nbsp;50</td>
-            <td>2 / 25 / 2023 至 2 / 1 / 2023</td>
-        </tr>
-    
-        <tr>
-            <td>1</td>
-            <td><a href="/score/test/1.html">2022 学年下学期（七年级下）期初考试</a></td>
-            <td><i class="fa fa-solid fa-user"></i>&nbsp;47</td>
-            <td>2 / 13 / 2023 至 2 / 14 / 2023</td>
-        </tr>
-    
-</table>
+<div class="topan-section-shadow">
+    <h2>蒋函霖<span class="student-id">&nbsp;&nbsp;(学号：19)</span></h2>
+    <p class="messages-display">
+        <strong>Count:</strong> <i class="fa fa-solid fa-fire"></i> 3
+    </p>
+</div>
                     <br>
                 </div>
                 <footer class="topan-footer">
