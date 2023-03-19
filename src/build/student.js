@@ -13,7 +13,9 @@ var getStudentData=str=>{
         while(id<Config.student.length&&Config.student[id].name!=str)id++;
         if(id==Config.student.length)return {id: -1, name: str};
     }
-    return Config.student[id];
+    var res=Config.student[id];
+    res.i=id;
+    return res;
 }
 
 module.exports={getStudentData};

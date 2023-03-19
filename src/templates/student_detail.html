@@ -1,0 +1,15 @@
+<style>
+    .student-id{
+        color: grey;
+        font-size: 70%;
+    }
+    .messages-display{
+        color: #888;
+    }
+</style>
+<div class="topan-section-shadow">
+    <h2><%= student.name %><span class="student-id">&nbsp;&nbsp;(学号：<%= student.id %>)</span></h2>
+    <p class="messages-display">
+        <strong>Count:</strong> <i class="fa fa-solid fa-fire"></i> <%= student.count %>
+    </p>
+</div>

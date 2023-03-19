@@ -40,8 +40,13 @@ ejs.renderFile("./src/templates/home.html",{
                  },HTML));
 });
 
+Config.student.forEach(student=>{
+    student.count=0;
+});
+
 Config.configure.tests.forEach(test=>{
     test.detail=YAML.load(`./data/${test.file}`);
+    console.log(`#${test.id}. ${test.detail.title}`);
     test.detail.date.start=require('dayjs')(test.detail.date.start).format("M / D / YYYY");
     test.detail.date.end=require('dayjs')(test.detail.date.end).format("M / D / YYYY");
     test.description=MarkdownIt.render(test.detail.description);
@@ -52,6 +57,7 @@ Config.configure.tests.forEach(test=>{
     });
     test.detail.message.forEach(message=>{
         message.stu=getStudentData(message.name);
+        Config.student[message.stu.i].count++;
         message.sum=0, message.addclass=new Array();
         message.score.forEach((score,scoreIndex)=>{
             message.sum+=score;
@@ -80,21 +86,46 @@ Config.configure.tests.forEach(test=>{
     },(err,HTML)=>{
         fs.writeFileSync(`./dist/test/${test.id}.html`,
             Template({title: test.detail.title,
-                      header: ``
+                      header: ``,
+                      ontest: true
                      },HTML));
     });
 });
-
-// console.log(JSON.stringify(Config,null,"  "));
 
 ejs.renderFile("./src/templates/test_list.html",{
     data: Config
 },(err,HTML)=>{
     fs.writeFileSync("./dist/test/index.html",
         Template({title: `Tests List`,
-                  header: ``
+                  header: ``,
+                  ontest: true
                  },HTML));
 });
+
+Config.student.forEach(student=>{
+    ejs.renderFile("./src/templates/student_detail.html",{
+        data: Config,
+        student
+    },(err,HTML)=>{
+        fs.writeFileSync(`./dist/student/${student.id}.html`,
+            Template({title: `${student.name}`,
+                      header: ``,
+                      onstudent: true
+                     },HTML));
+    });
+});
+
+ejs.renderFile("./src/templates/student_list.html",{
+    data: Config
+},(err,HTML)=>{
+    fs.writeFileSync("./dist/student/index.html",
+        Template({title: `Students List`,
+                  header: ``,
+                  onstudent: true
+                 },HTML));
+});
+
+// console.log(JSON.stringify(Config,null,"  "));
 
 if(process.argv.slice(2).includes("-github")){
     const ghpages=require('gh-pages');

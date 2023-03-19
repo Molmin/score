@@ -1,0 +1,31 @@
+<style>
+    td,th{
+        word-wrap: break-word;
+    }
+    td{
+        white-space: nowrap;
+        overflow: hidden;
+        height: 30px;
+    }
+    td:nth-child(2){
+        width: 55%;
+    }
+    table{
+        width: 100%;
+        background-color: white;
+    }
+</style>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Count</th>
+    </tr>
+    <% data.student.forEach(student=>{ %>
+        <tr>
+            <td><%= student.id %></td>
+            <td><a href="/<%= data.on %>/student/<%= student.id %>.html"><%= student.name %></a></td>
+            <td><i class="fa fa-solid fa-fire"></i>&nbsp;<%= student.count %></td>
+        </tr>
+    <% }) %>
+</table>
