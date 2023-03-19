@@ -40,7 +40,6 @@
 <table>
     <tr>
         <th>Rank</th>
-        <th>StuID</th>
         <th>Name</th>
         <th>Sum Score&#10;<span class="font-weight-normal">（满分：<%= test.fullscore %>）</span></th>
         <% test.detail.subject.forEach(subject=>{ %>
@@ -48,7 +47,7 @@
         <% }) %>
     </tr>
     <tr>
-        <td colspan="3" class="score-average">Average</td>
+        <td colspan="2" class="score-average">Average</td>
         <td>
             <%= parseInt(test.Sumscore*100)/100 %>
             <span class="score-split">/</span>
@@ -62,10 +61,12 @@
             </td>
         <% }) %>
     </tr>
-    <% test.detail.message.forEach((message,rank)=>{ %>
+    <% var lastScore=10000000000,lastRank=0;
+    test.detail.message.forEach((message,rank)=>{
+        if(message.sum!=lastScore)
+            lastScore=message.sum,lastRank=rank+1; %>
         <tr>
-            <td><%= rank+1 %></td>
-            <td><%= message.stu.id %></td>
+            <td><%= lastRank %></td>
             <td>
                 <a href="/<%= data.on %>/student/<%= message.stu.id %>.html"><%= message.stu.name %></a>
             </td>
@@ -76,9 +77,11 @@
             </td>
             <% message.score.forEach((score,scoreIndex)=>{ %>
                 <td<%- message.addclass[scoreIndex] %>>
-                    <%= score %>
-                    <span class="score-split">/</span>
-                    <span class="score-standard"><%= parseInt(score/test.detail.subject[scoreIndex].maxscore*1000)/10 %></span>
+                    <% if(score!=null){ %>
+                        <%= score %>
+                        <span class="score-split">/</span>
+                        <span class="score-standard"><%= parseInt(score/test.detail.subject[scoreIndex].maxscore*1000)/10 %></span>
+                    <% } %>
                 </td>
             <% }) %>
         </tr>
