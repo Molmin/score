@@ -7,11 +7,11 @@ var getStudentData=str=>{
     if(str.substr(0,1)=="="){
         var correctId=str.substr(1);
         while(id<Config.student.length&&Config.student[id].id!=correctId)id++;
-        if(id==Config.student.length)return {id: correctId, name: String(undefined)};
+        if(id==Config.student.length)id=0;
     }
     else{
         while(id<Config.student.length&&Config.student[id].name!=str)id++;
-        if(id==Config.student.length)return {id: -1, name: str};
+        if(id==Config.student.length)id=0;
     }
     var res=Config.student[id];
     res.i=id;

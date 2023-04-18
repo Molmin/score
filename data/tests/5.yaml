@@ -1,0 +1,109 @@
+title: 七年级（2022 学年）下学期第五大周大周考试
+date: 
+  start: 2023-04-10
+  end: 2023-04-13
+description: |
+subject:
+  - name: 语文
+    fullscore: 120
+  - name: 数学
+    fullscore: 100
+  - name: 英语
+    fullscore: 100
+  - name: 科学
+    fullscore: 100
+message:
+  - name: =26
+    score: [98,100,98,94]
+  - name: =31
+    score: [91,100,95,98]
+  - name: =20
+    score: [96,100,95,98]
+  - name: =40
+    score: [91,100,88,97]
+  - name: =33
+    score: [86,99,87,99]
+  - name: =29
+    score: [93,94,90,91]
+  - name: =32
+    score: [93,100,91,78]
+  - name: =28
+    score: [76,96,92,96]
+  - name: =25
+    score: [85,93,91,89]
+  - name: =41
+    score: [95,81,92,87]
+  - name: =46
+    score: [83,97,89,86]
+  - name: =48
+    score: [83,100,88,84]
+  - name: =34
+    score: [89,97,83,84]
+  - name: =35
+    score: [89,87,94,83]
+  - name: =14
+    score: [92,91,90,78]
+  - name: =15
+    score: [90,92,85,83]
+  - name: =37
+    score: [81,100,86,82]
+  - name: =38
+    score: [87,96,82,84]
+  - name: =27
+    score: [90,84,89,85]
+  - name: =12
+    score: [85,87,89,82]
+  - name: =10
+    score: [82,90,87,81]
+  - name: =36
+    score: [87,79,91,83]
+  - name: =21
+    score: [83,87,85,85]
+  - name: =11
+    score: [92,91,83,73]
+  - name: =42
+    score: [84,94,82,79]
+  - name: =3
+    score: [82,85,88,83]
+  - name: =7
+    score: [89,93,85,71]
+  - name: =24
+    score: [80,90,80,88]
+  - name: =9
+    score: [85,81,86,82]
+  - name: =5
+    score: [87,77,89,80]
+  - name: =30
+    score: [83,81,85,82]
+  - name: =47
+    score: [73,84,85,80]
+  - name: =13
+    score: [77,75,85,84]
+  - name: =1
+    score: [76,75,88,81]
+  - name: =16
+    score: [94,69,90,67]
+  - name: =39
+    score: [77,100,73,70]
+  - name: =8
+    score: [86,85,78,69]
+  - name: =18
+    score: [87,84,83,63]
+  - name: =22
+    score: [87,74,79,74]
+  - name: =17
+    score: [89,69,85,69]
+  - name: =23
+    score: [79,78,85,70]
+  - name: =4
+    score: [77,81,81,82]
+  - name: =6
+    score: [73,77,75,86]
+  - name: =2
+    score: [72,79,90,59]
+  - name: =19
+    score: [80,82,71,63]
+  - name: =43
+    score: [78,90,null,81]
+  - name: =49
+    score: [54,64,47,59]
