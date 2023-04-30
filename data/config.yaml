@@ -6,6 +6,8 @@ configure:
   tests:
     - id: 5
       file: tests/5.yaml
+    - id: 4
+      file: tests/4.yaml
     - id: 3
       file: tests/3.yaml
     - id: 2

@@ -1,101 +1,151 @@
 student:
   - id: 1
     name: 李易航
+    abbr: lyh
   - id: 2
     name: 陈时
+    abbr: cs
   - id: 3
     name: 吕烨仁
+    abbr: lyr
   - id: 4
     name: 王邦杰
+    abbr: wbj
   - id: 5
     name: 周浩宇
+    abbr: zhy
   - id: 6
     name: 支天承
+    abbr: ztc
   - id: 7
     name: 吴子昊
+    abbr: wzh
   - id: 8
     name: 黄耀祖
+    abbr: hyz
   - id: 9
     name: 徐文璋
+    abbr: xwz
   - id: 10
     name: 陈发树
+    abbr: cfs
   - id: 11
     name: 郭宇涛
+    abbr: gyt
   - id: 12
     name: 赵柯羽
+    abbr: zky
   - id: 13
     name: 袁欣望
+    abbr: yxw
   - id: 14
     name: 高爱田
+    abbr: gat
   - id: 15
     name: 徐悦涵
+    abbr: xyh
   - id: 16
     name: 张盛妍
+    abbr: zsy
   - id: 17
     name: 邹雨澈
+    abbr: zyc
   - id: 18
     name: 陈雨晴
+    abbr: cyq
   - id: 19
     name: 蒋函霖
+    abbr: jhl
   - id: 20
     name: 陆羽扬
+    abbr: lyy
   - id: 21
     name: 徐一凡
+    abbr: xyf
   - id: 22
     name: 刘沐思
+    abbr: lms
   - id: 23
     name: 郭峣宇
+    abbr: gyy
   - id: 24
     name: 陈郑天
+    abbr: czt
   - id: 25
     name: 王栩源
+    abbr: wxuy
   - id: 26
     name: 房家瑞
+    abbr: fjr
   - id: 27
     name: 王笑越
+    abbr: wxy
   - id: 28
     name: 吴旻逸
+    abbr: wmy
   - id: 29
     name: 陈昊昇
+    abbr: chs
   - id: 30
     name: 姚岩峰
+    abbr: yyf
   - id: 31
     name: 张栗
+    abbr: zl
   - id: 32
     name: 黄嘉隐
+    abbr: hjy
   - id: 33
     name: 徐文昊
+    abbr: xwh
   - id: 34
     name: 王奕沣
+    abbr: wyf
   - id: 35
     name: 何栩
+    abbr: hx
   - id: 36
     name: 赵峻涵
+    abbr: zjh
   - id: 37
     name: 尹维桢
+    abbr: ywz
   - id: 38
     name: 刘家萌
+    abbr: ljm
   - id: 39
     name: 顾天易
+    abbr: gty
   - id: 40
     name: 张芳闻
+    abbr: zfw
   - id: 41
     name: 杨明晅
+    abbr: ymx
   - id: 42
     name: 詹昊奇
+    abbr: zhq
   - id: 43
     name: 王茂骅
+    abbr: wmh
   - id: 44
     name: 华家弘
+    abbr: hjh
   - id: 45
     name: 熊子能
+    abbr: xzn
   - id: 46
     name: 张斯睿
+    abbr: zsr
   - id: 47
     name: 林子洋
+    abbr: lzy
   - id: 48
     name: 朱奕亨
+    abbr: zyh
   - id: 49
     name: 朱伯梵
+    abbr: zbf
   - id: 50
     name: 戴子恒
+    abbr: dzh
