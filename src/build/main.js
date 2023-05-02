@@ -42,6 +42,7 @@ ejs.renderFile("./src/templates/home.html",{
 
 Config.student.forEach(student=>{
     student.count=0;
+    student.test=new Array()
 });
 
 Config.configure.tests.forEach(test=>{
@@ -57,7 +58,6 @@ Config.configure.tests.forEach(test=>{
     });
     test.detail.message.forEach(message=>{
         message.stu=getStudentData(message.name);
-        Config.student[message.stu.i].count++;
         message.sum=0, message.addclass=new Array();
         message.score.forEach((score,scoreIndex)=>{
             message.sum+=score;
@@ -67,6 +67,17 @@ Config.configure.tests.forEach(test=>{
             if(score!=null)test.detail.subject[scoreIndex].jointotal++;
         });
         test.Sumscore+=message.sum;
+    });
+    test.detail.message.forEach(message=>{
+        Config.student[message.stu.i].count++;
+        Config.student[message.stu.i].test.push({
+            test: {
+                id: test.id,
+                title: test.detail.title
+            },
+            scores: message.score,
+            subjects: test.detail.subject
+        });
     });
     test.detail.subject.forEach(subject=>{
         subject.sum/=subject.jointotal;
