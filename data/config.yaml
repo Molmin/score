@@ -4,6 +4,10 @@ title: Scoreboards
 configure:
   students: student.yaml
   tests:
+    - id: 7
+      file: tests/7.yaml
+    - id: 6
+      file: tests/6.yaml
     - id: 5
       file: tests/5.yaml
     - id: 4

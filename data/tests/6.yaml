@@ -1,0 +1,19 @@
+title: 七年级（2022 学年）下学期期末考试
+date: 
+  start: 2023-06-30
+  end: 2023-07-01
+description: |
+subject:
+  - name: 语文
+    fullscore: 100
+  - name: 数学
+    fullscore: 100
+  - name: 英语
+    fullscore: 103
+  - name: 科学
+    fullscore: 100
+  - name: 社会
+    fullscore: 100
+message:
+  - name: =1
+    score: [null,null,null,null]

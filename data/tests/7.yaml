@@ -1,0 +1,99 @@
+title: 八年级（2023 学年）上学期第一大周大周考试
+date: 
+  start: 2023-09-06
+  end: 2023-09-09
+description: |
+subject:
+  - name: 语文
+    fullscore: 120
+  - name: 数学
+    fullscore: 120
+  - name: 英语
+    fullscore: 100
+  - name: 科学
+    fullscore: 100
+message:
+  - name: =26
+    score: [100,120,91,98]
+  - name: =42
+    score: [97,120,93,97]
+  - name: =27
+    score: [98,118,96,94]
+  - name: =39
+    score: [92,120,93,100]
+  - name: =40
+    score: [89,120,96,98]
+  - name: =32
+    score: [91,117,93,98]
+  - name: =34
+    score: [94,118,88,98]
+  - name: =31
+    score: [86,120,92,97]
+  - name: =15
+    score: [92,112,92,97]
+  - name: =12
+    score: [90,116,86,96]
+  - name: =29
+    score: [82,116,93,96]
+  - name: =9
+    score: [87,117,88,94]
+  - name: =23
+    score: [91,112,89,94]
+  - name: =20
+    score: [82,118,92,93]
+  - name: =3
+    score: [87,113,91,92]
+  - name: =5
+    score: [80,117,90,96]
+  - name: =24
+    score: [89,108,93,93]
+  - name: =33
+    score: [86,120,78,98]
+  - name: =38
+    score: [79,120,91,92]
+  - name: =28
+    score: [82,110,90,98]
+  - name: =10
+    score: [81,120,86,92]
+  - name: =36
+    score: [85,116,84,93]
+  - name: =41
+    score: [77,113,93,95]
+  - name: =35
+    score: [94,103,88,92]
+  - name: =17
+    score: [93,105,87,90]
+  - name: =22
+    score: [89,107,88,91]
+  - name: =25
+    score: [88,113,79,91]
+  - name: =21
+    score: [96,92,89,93]
+  - name: =7
+    score: [85,105,92,86]
+  - name: =11
+    score: [89,104,89,85]
+  - name: =2
+    score: [71,112,90,91]
+  - name: =30
+    score: [82,97,87,94]
+  - name: =16
+    score: [89,89,91,89]
+  - name: =1
+    score: [73,116,81,87]
+  - name: =6
+    score: [80,100,85,88]
+  - name: =14
+    score: [82,101,82,81]
+  - name: =8
+    score: [78,95,83,86]
+  - name: =18
+    score: [86,94,82,69]
+  - name: =13
+    score: [80,84,85,77]
+  - name: =4
+    score: [78,89,80,57]
+  - name: =19
+    score: [52,90,69,80]
+  - name: =37
+    score: [81,null,85,94]
