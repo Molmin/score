@@ -13,87 +13,87 @@ subject:
   - name: 科学
     fullscore: 100
 message:
-  - name: =26
+  - name: <fjr>
     score: [100,120,91,98]
-  - name: =42
+  - name: <zyh>
     score: [97,120,93,97]
-  - name: =27
+  - name: <wxy>
     score: [98,118,96,94]
-  - name: =39
+  - name: <zfw>
     score: [92,120,93,100]
-  - name: =40
+  - name: <wmh>
     score: [89,120,96,98]
-  - name: =32
+  - name: <hjy>
     score: [91,117,93,98]
-  - name: =34
+  - name: <wyf>
     score: [94,118,88,98]
-  - name: =31
+  - name: <wxuy>
     score: [86,120,92,97]
-  - name: =15
+  - name: <xyh>
     score: [92,112,92,97]
-  - name: =12
+  - name: <zky>
     score: [90,116,86,96]
-  - name: =29
+  - name: <chs>
     score: [82,116,93,96]
-  - name: =9
+  - name: <xwz>
     score: [87,117,88,94]
-  - name: =23
+  - name: <lyy>
     score: [91,112,89,94]
-  - name: =20
+  - name: <xyf>
     score: [82,118,92,93]
-  - name: =3
+  - name: <lyr>
     score: [87,113,91,92]
-  - name: =5
+  - name: <zhy>
     score: [80,117,90,96]
-  - name: =24
+  - name: <ymx>
     score: [89,108,93,93]
-  - name: =33
+  - name: <xwh>
     score: [86,120,78,98]
-  - name: =38
+  - name: <ljm>
     score: [79,120,91,92]
-  - name: =28
+  - name: <wmy>
     score: [82,110,90,98]
-  - name: =10
+  - name: <cfs>
     score: [81,120,86,92]
-  - name: =36
+  - name: <zjh>
     score: [85,116,84,93]
-  - name: =41
+  - name: <zsr>
     score: [77,113,93,95]
-  - name: =35
+  - name: <hx>
     score: [94,103,88,92]
-  - name: =17
+  - name: <zyc>
     score: [93,105,87,90]
-  - name: =22
+  - name: <gyy>
     score: [89,107,88,91]
-  - name: =25
+  - name: <czt>
     score: [88,113,79,91]
-  - name: =21
+  - name: <lms>
     score: [96,92,89,93]
-  - name: =7
+  - name: <wzh>
     score: [85,105,92,86]
-  - name: =11
+  - name: <gyt>
     score: [89,104,89,85]
-  - name: =2
+  - name: <cs>
     score: [71,112,90,91]
-  - name: =30
+  - name: <yyf>
     score: [82,97,87,94]
-  - name: =16
+  - name: <zsy>
     score: [89,89,91,89]
-  - name: =1
+  - name: <lyh>
     score: [73,116,81,87]
-  - name: =6
+  - name: <ztc>
     score: [80,100,85,88]
-  - name: =14
+  - name: <gat>
     score: [82,101,82,81]
-  - name: =8
+  - name: <hyz>
     score: [78,95,83,86]
-  - name: =18
+  - name: <cyq>
     score: [86,94,82,69]
-  - name: =13
+  - name: <yxw>
     score: [80,84,85,77]
-  - name: =4
+  - name: <wbj>
     score: [78,89,80,57]
-  - name: =19
+  - name: <jhl>
     score: [52,90,69,80]
-  - name: =37
+  - name: <ywz>
     score: [81,null,85,94]
